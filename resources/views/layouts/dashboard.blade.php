@@ -201,6 +201,13 @@
 
                 <li class="navigation-header"><span data-i18n="Apps &amp; Pages">Apps &amp; Pages</span><i data-feather="more-horizontal"></i>
                 </li>
+
+                <li class="nav-item @yield('chat')">
+                    <a class="d-flex align-items-center" href="{{ route('chat.index') }}">
+                        <i data-feather='message-square'></i>
+                        <span class="menu-title text-truncate">Chat</span>
+                    </a>
+                </li>
                 <li class="nav-item @yield('dashboard')">
                     <a class="d-flex align-items-center" href="{{ route('dashboard') }}">
                         <i data-feather='database'></i>
@@ -276,6 +283,10 @@
     <!-- END: Main Menu-->
 
     <!-- BEGIN: Content-->
+    @if(Route::is('chat.index') )
+       @yield('content')
+    @else
+
     <div class="app-content content ">
         <div class="content-overlay"></div>
         <div class="header-navbar-shadow"></div>
@@ -313,10 +324,11 @@
                     {{-- Content End Here --}}
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
+    @endif
+   
     <!-- END: Content-->
 
     <div class="sidenav-overlay"></div>

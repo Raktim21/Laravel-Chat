@@ -1,4 +1,4 @@
-@extends('admin.dashboard')
+@extends('layouts.dashboard')
 
 {{-- Title --}}
 @section('title')
@@ -38,7 +38,7 @@ active
                         <!-- User Information -->
                         <div class="header-profile-sidebar">
                             <div class="avatar box-shadow-1 avatar-xl avatar-border">
-                                <img src="../../../app-assets/images/portrait/small/avatar-s-11.jpg"
+                                <img src="{{ asset('dashboard_assets/app-assets/images/portrait/small/avatar-s-11.jpg')}}"
                                     alt="user_avatar" />
                                 <span class="avatar-status-online avatar-status-xl"></span>
                             </div>
@@ -148,7 +148,7 @@ active
                         <div class="d-flex align-items-center w-100">
                             <div class="sidebar-profile-toggle">
                                 <div class="avatar avatar-border">
-                                    <img src="../../../app-assets/images/portrait/small/avatar-s-11.jpg"
+                                    <img src="{{ asset('dashboard_assets/app-assets/images/portrait/small/avatar-s-11.jpg')}}"
                                         alt="user_avatar" height="42" width="42" />
                                     <span class="avatar-status-online"></span>
                                 </div>
@@ -171,7 +171,7 @@ active
                         <h4 class="chat-list-title">Chats</h4>
                         <ul class="chat-users-list chat-list media-list">
                             <li>
-                                <span class="avatar"><img src="../../../app-assets/images/portrait/small/avatar-s-3.jpg"
+                                <span class="avatar"><img src="{{ asset('dashboard_assets/app-assets/images/portrait/small/avatar-s-3.jpg')}}"
                                         height="42" width="42" alt="Generic placeholder image" />
                                     <span class="avatar-status-offline"></span>
                                 </span>
@@ -188,7 +188,7 @@ active
                                 </div>
                             </li>
                             <li>
-                                <span class="avatar"><img src="../../../app-assets/images/portrait/small/avatar-s-7.jpg"
+                                <span class="avatar"><img src="{{ asset('dashboard_assets/app-assets/images/portrait/small/avatar-s-7.jpg')}}"
                                         height="42" width="42" alt="Generic placeholder image" />
                                     <span class="avatar-status-busy"></span>
                                 </span>
@@ -204,7 +204,7 @@ active
                                 </div>
                             </li>
                             <li>
-                                <span class="avatar"><img src="../../../app-assets/images/portrait/small/avatar-s-8.jpg"
+                                <span class="avatar"><img src="{{ asset('dashboard_assets/app-assets/images/portrait/small/avatar-s-8.jpg')}}"
                                         height="42" width="42" alt="Generic placeholder image" />
                                     <span class="avatar-status-away"></span>
                                 </span>
@@ -225,119 +225,30 @@ active
                         </ul>
                         <h4 class="chat-list-title">Contacts</h4>
                         <ul class="chat-users-list contact-list media-list">
-                            <li>
-                                <span class="avatar"><img src="../../../app-assets/images/portrait/small/avatar-s-7.jpg"
-                                        height="42" width="42" alt="Generic placeholder image" />
-                                </span>
-                                <div class="chat-info">
-                                    <h5 class="mb-0">Jenny Perich</h5>
-                                    <p class="card-text text-truncate">
-                                        Tart dragée carrot cake chocolate bar. Chocolate cake jelly beans caramels
-                                        tootsie roll candy canes.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="avatar"><img src="../../../app-assets/images/portrait/small/avatar-s-5.jpg"
-                                        height="42" width="42" alt="Generic placeholder image" />
-                                </span>
-                                <div class="chat-info">
-                                    <h5 class="mb-0">Sarah Montgomery</h5>
-                                    <p class="card-text text-truncate">
-                                        Tootsie roll sesame snaps biscuit icing jelly-o biscuit chupa chups powder.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="avatar"><img src="../../../app-assets/images/portrait/small/avatar-s-9.jpg"
-                                        height="42" width="42" alt="Generic placeholder image" />
-                                </span>
-                                <div class="chat-info">
-                                    <h5 class="mb-0">Heather Howell</h5>
-                                    <p class="card-text text-truncate">
-                                        Tart cookie dragée sesame snaps halvah. Fruitcake sugar plum gummies cheesecake
-                                        toffee.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="avatar"><img src="../../../app-assets/images/portrait/small/avatar-s-7.jpg"
-                                        height="42" width="42" alt="Generic placeholder image" />
-                                </span>
-                                <div class="chat-info">
-                                    <h5 class="mb-0">Kelly Reyes</h5>
-                                    <p class="card-text text-truncate">
-                                        Wafer toffee tart jelly cake croissant chocolate bar cupcake donut. Fruitcake
-                                        gingerbread tiramisu sweet
-                                        jelly-o.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="avatar"><img
-                                        src="../../../app-assets/images/portrait/small/avatar-s-15.jpg" height="42"
-                                        width="42" alt="Generic placeholder image" />
-                                </span>
-                                <div class="chat-info">
-                                    <h5 class="mb-0">Kristopher Candy</h5>
-                                    <p class="card-text text-truncate">
-                                        Marzipan bonbon chocolate bar biscuit lemon drops muffin jelly-o sweet jujubes.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="avatar"><img
-                                        src="../../../app-assets/images/portrait/small/avatar-s-14.jpg" height="42"
-                                        width="42" alt="Generic placeholder image" />
-                                </span>
-                                <div class="chat-info">
-                                    <h5 class="mb-0">Vincent Nelson</h5>
-                                    <p class="card-text text-truncate">
-                                        Toffee gummi bears sugar plum gummi bears chocolate bar donut. Pudding cookie
-                                        lemon drops icing
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="avatar"><img
-                                        src="../../../app-assets/images/portrait/small/avatar-s-17.jpg" height="42"
-                                        width="42" alt="Generic placeholder image" />
-                                </span>
-                                <div class="chat-info">
-                                    <h5 class="mb-0">Jimmy Parker</h5>
-                                    <p class="card-text text-truncate">
-                                        Powder halvah jelly beans topping caramels muffin dragée lollipop oat cake.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="avatar"><img src="../../../app-assets/images/portrait/small/avatar-s-3.jpg"
-                                        height="42" width="42" alt="Generic placeholder image" />
-                                </span>
-                                <div class="chat-info">
-                                    <h5 class="mb-0">Elizabeth Elliott</h5>
-                                    <p class="card-text text-truncate">
-                                        Candy canes ice cream jelly beans carrot cake chocolate bar pastry candy
-                                        jelly-o.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="avatar"><img
-                                        src="../../../app-assets/images/portrait/small/avatar-s-13.jpg" height="42"
-                                        width="42" alt="Generic placeholder image" />
-                                </span>
-                                <div class="chat-info">
-                                    <h5 class="mb-0">Nelson D'souza</h5>
-                                    <p class="card-text text-truncate">
-                                        Macaroon candy canes apple pie soufflé lemon drops chocolate cake chocolate
-                                        sweet roll.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="no-results">
-                                <h6 class="mb-0">No Contacts Found</h6>
-                            </li>
+
+                            @if ($users != null)
+                                @foreach ($users as $item)
+                                        @if ( $item->id != Auth::user()->id)
+                                            <li>
+                                              <span class="avatar">
+                                                  <img src="{{ asset('dashboard_assets/app-assets/images/portrait/small/avatar-s-7.jpg')}}"
+                                                height="42" width="42" alt="Generic placeholder image" />
+                                              </span>
+                                              <div class="chat-info">
+                                                <h5 class="mb-0">{{ $item->name }}</h5>
+                                                <p class="card-text text-truncate">
+                                                    {{ $item->email }}
+                                                </p>
+                                              </div>
+                                            </li>
+                                        @endif
+                                @endforeach
+                            @else 
+                                <li class="no-results">
+                                    <h6 class="mb-0">No Contacts Found</h6>
+                                </li>
+                            @endif
+                        
                         </ul>
                     </div>
                     <!-- Sidebar Users end -->
@@ -373,7 +284,7 @@ active
                                             <i data-feather="menu" class="font-medium-5"></i>
                                         </div>
                                         <div class="avatar avatar-border user-profile-toggle m-0 mr-1">
-                                            <img src="../../../app-assets/images/portrait/small/avatar-s-7.jpg"
+                                            <img src="{{ asset('dashboard_assets/app-assets/images/portrait/small/avatar-s-7.jpg')}}"
                                                 alt="avatar" height="36" width="36" />
                                             <span class="avatar-status-busy"></span>
                                         </div>
@@ -415,7 +326,7 @@ active
                                     <div class="chat">
                                         <div class="chat-avatar">
                                             <span class="avatar box-shadow-1 cursor-pointer">
-                                                <img src="../../../app-assets/images/portrait/small/avatar-s-11.jpg"
+                                                <img src="{{ asset('dashboard_assets/app-assets/images/portrait/small/avatar-s-11.jpg')}}"
                                                     alt="avatar" height="36" width="36" />
                                             </span>
                                         </div>
@@ -428,7 +339,7 @@ active
                                     <div class="chat chat-left">
                                         <div class="chat-avatar">
                                             <span class="avatar box-shadow-1 cursor-pointer">
-                                                <img src="../../../app-assets/images/portrait/small/avatar-s-7.jpg"
+                                                <img src="{{ asset('dashboard_assets/app-assets/images/portrait/small/avatar-s-7.jpg')}}"
                                                     alt="avatar" height="36" width="36" />
                                             </span>
                                         </div>
@@ -448,7 +359,7 @@ active
                                     <div class="chat">
                                         <div class="chat-avatar">
                                             <span class="avatar box-shadow-1 cursor-pointer">
-                                                <img src="../../../app-assets/images/portrait/small/avatar-s-11.jpg"
+                                                <img src="{{ asset('dashboard_assets/app-assets/images/portrait/small/avatar-s-11.jpg')}}"
                                                     alt="avatar" height="36" width="36" />
                                             </span>
                                         </div>
@@ -464,7 +375,7 @@ active
                                     <div class="chat chat-left">
                                         <div class="chat-avatar">
                                             <span class="avatar box-shadow-1 cursor-pointer">
-                                                <img src="../../../app-assets/images/portrait/small/avatar-s-7.jpg"
+                                                <img src="{{ asset('dashboard_assets/app-assets/images/portrait/small/avatar-s-7.jpg')}}"
                                                     alt="avatar" height="36" width="36" />
                                             </span>
                                         </div>
@@ -483,7 +394,7 @@ active
                                     <div class="chat">
                                         <div class="chat-avatar">
                                             <span class="avatar box-shadow-1 cursor-pointer">
-                                                <img src="../../../app-assets/images/portrait/small/avatar-s-11.jpg"
+                                                <img src="{{ asset('dashboard_assets/app-assets/images/portrait/small/avatar-s-11.jpg')}}"
                                                     alt="avatar" height="36" width="36" />
                                             </span>
                                         </div>
@@ -496,7 +407,7 @@ active
                                     <div class="chat chat-left">
                                         <div class="chat-avatar">
                                             <span class="avatar box-shadow-1 cursor-pointer">
-                                                <img src="../../../app-assets/images/portrait/small/avatar-s-7.jpg"
+                                                <img src="{{ asset('dashboard_assets/app-assets/images/portrait/small/avatar-s-7.jpg')}}"
                                                     alt="avatar" height="36" width="36" />
                                             </span>
                                         </div>
@@ -512,7 +423,7 @@ active
                                     <div class="chat">
                                         <div class="chat-avatar">
                                             <span class="avatar box-shadow-1 cursor-pointer">
-                                                <img src="../../../app-assets/images/portrait/small/avatar-s-11.jpg"
+                                                <img src="{{ asset('dashboard_assets/app-assets/images/portrait/small/avatar-s-11.jpg')}}"
                                                     alt="avatar" height="36" width="36" />
                                             </span>
                                         </div>
@@ -566,7 +477,7 @@ active
                             <!-- User Profile image with name -->
                             <div class="header-profile-sidebar">
                                 <div class="avatar box-shadow-1 avatar-border avatar-xl">
-                                    <img src="../../../app-assets/images/portrait/small/avatar-s-7.jpg"
+                                    <img src="{{ asset('dashboard_assets/app-assets/images/portrait/small/avatar-s-7.jpg')}}"
                                         alt="user_avatar" height="70" width="70" />
                                     <span class="avatar-status-busy avatar-status-lg"></span>
                                 </div>
@@ -642,4 +553,6 @@ active
 
 @section('js')
 <script src="{{ asset('dashboard_assets/app-assets/js/scripts/pages/app-chat.js')}}"></script>
+
+
 @endsection
